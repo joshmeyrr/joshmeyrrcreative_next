@@ -8,28 +8,13 @@ import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
 
-export default function Index({ posts, globalData }) {
+export default function OldIndex({ posts, globalData }) {
   return (
     <Layout>
-      {/* <SEO title={globalData.name} description={globalData.blogTitle} /> */}
-      {/* <Header name={globalData.name} /> */}
-      <main className="p-2 mx-auto md:p-4 md:px-8 max-w-theme">
-        <section className="pt-2 h-[66vh] md:h-[75vh] relative flex items-end md:items-center justify-center">
-          {/* <img
-            className="object-cover w-full h-full rounded-theme hero-image"
-            src="../static/social-media-2.jpg"
-            alt=""
-          /> */}
-          <div className="absolute flex flex-col px-4 pb-8 md:pb-0 md:justify-center">
-            <h1 className="text-shadow-theme text-5xl font-bold text-right lowercase max-w-5xl md:text-center md:text-5xl lg:text-6xl font-header !leading-[1.2] md:!leading-[1.4]">
-              Short form content editing & publishing
-            </h1>
-            <p className="pl-12 mt-4 text-3xl italic text-right text-shadow-theme md:text-center md:text-4xl lg:text-5xl md:pl-0">
-              Press record. Submit the footage. Relax.
-            </p>
-          </div>
-        </section>
-        {/* <h1 classNameName="mb-12 text-3xl text-center lg:text-5xl">
+      <SEO title={globalData.name} description={globalData.blogTitle} />
+      <Header name={globalData.name} />
+      <main className="">
+        <h1 classNameName="mb-12 text-3xl text-center lg:text-5xl">
           {globalData.blogTitle}
         </h1>
         <ul classNameName="w-full">
@@ -59,7 +44,7 @@ export default function Index({ posts, globalData }) {
               </Link>
             </li>
           ))}
-        </ul> */}
+        </ul>
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
